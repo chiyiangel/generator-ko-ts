@@ -37,7 +37,7 @@ gulp.task('ts', function () {
         .pipe(typescript({
             module: 'amd',
             sourcemap: true,
-            outDir: './'
+            outDir: './src'
         }))
         .pipe(gulp.dest('./src'))
         .pipe(connect.reload());
