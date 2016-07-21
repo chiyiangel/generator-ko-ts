@@ -1,14 +1,14 @@
 {
-  "name": "generator-ko",
+  "name": "generator-ko-ts",
   "version": "0.1.4",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "SteveSanderson/generator-ko",
+  "repository": "chiyiangel/generator-ko-ts",
   "author": {
-    "name": "Steven Sanderson",
+    "name": "John Liu",
     "email": "",
-    "url": "https://github.com/SteveSanderson"
+    "url": "https://github.com/chiyiangel"
   },
   "engines": {
     "node": ">=0.10.0"
