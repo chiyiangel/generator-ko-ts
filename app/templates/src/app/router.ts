@@ -6,10 +6,11 @@
 // specifies a 'page', which is a Knockout component) - there's nothing built into
 // Knockout that requires or even knows about this technique. It's just one of
 // many possible ways of setting up client-side routes.
+/// <reference path="./../references.d.ts" />
 
-import ko = require("knockout");
-import crossroads = require("crossroads");
-import hasher = require("hasher");
+import * as ko from "knockout";
+import * as crossroads from "crossroads";
+import * as hasher from "hasher";
 export = router;
 
 module router {

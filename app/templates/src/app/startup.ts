@@ -1,7 +1,9 @@
-import $ = require("jquery");
-import ko = require("knockout");
-import bootstrap = require("bootstrap");
-import router = require("./router");
+/// <reference path="./../references.d.ts" />
+
+import * as ko from "knockout";
+import * as $ from "jquery";
+import * as bootstrap from "bootstrap";
+import * as router from "./router";
 
 // Components can be packaged as AMD modules, such as the following:
 ko.components.register('nav-bar', { require: 'components/nav-bar/nav-bar' });

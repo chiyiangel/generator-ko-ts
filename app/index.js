@@ -55,11 +55,6 @@ var KoGenerator = yeoman.generators.Base.extend({
       message: 'What\'s the name of your new site?',
       default: path.basename(process.cwd())
     }, {
-      type: 'list',
-      name: 'codeLanguage',
-      message: 'What language do you want to use?',
-      choices: [languageChoice.js, languageChoice.ts]
-    }, {
       type: 'confirm',
       name: 'includeTests',
       message: 'Do you want to include automated tests, using Jasmine and Karma?',
@@ -69,7 +64,7 @@ var KoGenerator = yeoman.generators.Base.extend({
     this.prompt(prompts, function (props) {
       this.longName = props.name;
       this.slugName = this._.slugify(this.longName);
-      this.usesTypeScript = props.codeLanguage === languageChoice.ts;
+      this.usesTypeScript = languageChoice.ts;
       this.includeTests = props.includeTests;
       done();
     }.bind(this));

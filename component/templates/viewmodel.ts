@@ -1,5 +1,7 @@
 /// <amd-dependency path="text!./<%= filename %>.html" />
-import ko = require("knockout");
+/// <reference path="./../../references.d.ts" />
+
+import * as ko from "knockout";
 export var template: string = require("text!./<%= filename %>.html");
 
 export class viewModel {
