@@ -1,3 +1,4 @@
-# generator-ko
+# generator-ko-ts
 
-Generates a starting point for a Knockout application.
+This project is forked from SteveSanderson/generator-ko and add more features
+for more details check gulpfile.js
